@@ -8,14 +8,18 @@ import styled from 'styled-components/native';
 
 // sherlock
 import {RootStackNav} from './src/app/navigators/RootStackNav';
+import {store} from './src/app/store/reduxStore';
+import {Provider} from 'react-redux';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <NavigationContainer>
-      <RootStackNav />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <RootStackNav />
+      </NavigationContainer>
+    </Provider>
   );
 }
 

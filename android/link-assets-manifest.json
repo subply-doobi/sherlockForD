@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/AppleLiGothicMedium.ttf",
+      "sha1": "4fda23c7d7e758da7e03b0e13cf92eb811bea349"
+    },
+    {
+      "path": "src/assets/fonts/JuliusSansOne-Regular.ttf",
+      "sha1": "d66ed30f0709dcc4707d1f62158274814e8690b1"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansKR-VariableFont_wght.ttf",
+      "sha1": "da8ef76ac01bec36758996a4a35ce4ff32fd119c"
+    }
+  ]
+}

@@ -7,15 +7,8 @@ const Mypage = () => {
   return (
     <View>
       <Text>Mypage</Text>
-      <TestBtn onPress={() => navigate('ContractSummary')} />
     </View>
   );
 };
 
 export default Mypage;
-
-const TestBtn = styled.TouchableOpacity`
-  width: 100px;
-  height: 100px;
-  background-color: red;
-`;
