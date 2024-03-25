@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import {colors} from './colors';
+import {colors} from '../colors';
 
 // fonts
 // TBD : ios 폰트적용시 font-family 확인 필요
@@ -59,4 +59,14 @@ interface ISpace {
 export const Space = styled.View<ISpace>`
   width: ${({width}: ISpace) => (width ? `${width}px` : '100%')};
   height: ${({height}: ISpace) => (height ? `${height}px` : '16px')};
+`;
+
+interface IIcon {
+  size?: number;
+}
+export const Icon = styled.Image<IIcon>`
+  width: ${({size}) => (size ? size : 24)}px;
+  height: ${({size}) => (size ? size : 24)}px;
+  align-items: center;
+  justify-content: center;
 `;

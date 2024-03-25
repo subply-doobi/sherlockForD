@@ -1,82 +1,88 @@
 import {useNavigation} from '@react-navigation/native';
-import {View, Text} from 'react-native';
+import {View, Text, ImageSourcePropType} from 'react-native';
 import styled from 'styled-components/native';
-import {
-  TextAppleLiGothic,
-  TextMain,
-  TextJuliusSansOne,
-  Container,
-  HorizontalLine,
-  Col,
-  Row,
-} from '../../app/styles/styledComponents';
-import {colors} from '../../app/styles/colors';
+import {TextMain, Container, Col, Row} from '../../shared/ui/styledComponents';
+import {colors} from '../../shared/colors';
+import ContractBtn from './ui/ContractBtn';
+import {icons} from '../../shared/iconSource';
 
 const ContractSummary = () => {
   const {navigate} = useNavigation();
-  const SUMMARY_ITEMS = [
-    {id: 1, name: '신청서', status: 'applicated', value: '0'},
-    {id: 2, name: '결제 대기중 계약', status: 'wating', value: '0'},
-    {id: 3, name: '진행 중 계약', status: 'onGoing', value: '0'},
-    {id: 4, name: '완료된 계약', status: 'completed', value: '0'},
-    {id: 5, name: '취소/환불', status: 'canceled', value: '0'},
+  const SUMMARY_ITEMS: {
+    id: number;
+    name: string;
+    status: string;
+    value: string;
+    btnStyle: 'blue' | 'border' | 'grey';
+    iconSource: ImageSourcePropType;
+  }[] = [
+    {
+      id: 1,
+      name: '신청서',
+      status: 'applicated',
+      value: '3',
+      btnStyle: 'blue',
+      iconSource: icons.docs_24,
+    },
+    {
+      id: 2,
+      name: '결제 대기중 계약',
+      status: 'wating',
+      value: '2',
+      btnStyle: 'border',
+      iconSource: icons.clock_24,
+    },
+    {
+      id: 3,
+      name: '진행 중 계약',
+      status: 'onGoing',
+      value: '5',
+      btnStyle: 'border',
+      iconSource: icons.list_24,
+    },
+    {
+      id: 4,
+      name: '완료된 계약',
+      status: 'completed',
+      value: '120',
+      btnStyle: 'grey',
+      iconSource: icons.complete_24,
+    },
+    {
+      id: 5,
+      name: '취소/환불',
+      status: 'canceled',
+      value: '7',
+      btnStyle: 'grey',
+      iconSource: icons.cancel_24,
+    },
   ];
   return (
     <Container>
-      {/* <TextJuliusSansOne>ContractSummary</TextJuliusSansOne>
-      <TextMain>ContractSummary</TextMain>
-      <TextAppleLiGothic>ContractSummary</TextAppleLiGothic> */}
-      <HorizontalLine
-        thickness={0}
-        style={{
-          marginTop: 64,
-          shadowColor: colors.black,
-          shadowOffset: {width: 0, height: 2},
-          shadowOpacity: 0.5,
-          shadowRadius: 2,
-          elevation: 10,
-        }}
-        color={colors.white}
-      />
-      <Col
-        style={{
-          paddingHorizontal: 40,
-          paddingVertical: 40,
-          rowGap: 78,
-        }}>
+      <Box>
         {SUMMARY_ITEMS.map(item => (
-          <Row
+          <ContractBtn
+            iconSource={item.iconSource}
+            btnStyle={item.btnStyle}
+            label={item.name}
+            number={item.value}
             key={item.id}
-            style={{
-              width: '100%',
-              height: 40,
-              justifyContent: 'space-between',
-            }}>
-            <Label>{item.name}</Label>
-            <Button
-              onPress={() =>
-                navigate({name: 'ContractList', params: {status: item.status}})
-              }>
-              <Value>{item.value}건</Value>
-            </Button>
-          </Row>
+            onPress={() => navigate('ContractList', {status: item.status})}
+          />
         ))}
-      </Col>
+      </Box>
     </Container>
   );
 };
 
 export default ContractSummary;
 
-const Button = styled.TouchableOpacity`
-  width: 45px;
-  height: 40px;
-`;
-const Label = styled(TextMain)`
-  font-size: 12px;
-  font-weight: bold;
-`;
-const Value = styled(TextMain)`
-  font-size: 20px;
-  font-weight: bold;
+const Box = styled.View`
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  padding: 40px 24px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 16px;
 `;

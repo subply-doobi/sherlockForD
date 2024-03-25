@@ -1,8 +1,8 @@
 import {View, Text, StyleProp} from 'react-native';
 import React from 'react';
 import styled from 'styled-components/native';
-import {TextMain} from '../../app/styles/styledComponents';
-import {colors} from '../../app/styles/colors';
+import {TextMain} from '../../shared/ui/styledComponents';
+import {colors} from '../../shared/colors';
 
 interface ICTAButton {
   title: string;
@@ -13,7 +13,7 @@ interface ICTAButton {
 const CTAButton = ({title, btnStyle, onPress, style}: ICTAButton) => {
   const bgColor =
     btnStyle === 'active'
-      ? colors.black
+      ? colors.main
       : btnStyle === 'inactive'
       ? colors.lightGrey
       : colors.white;
@@ -37,15 +37,17 @@ const CTAButton = ({title, btnStyle, onPress, style}: ICTAButton) => {
 export default CTAButton;
 
 const Button = styled.TouchableOpacity`
-  height: 50px;
+  height: 52px;
   width: 100%;
   background-color: #000;
   border-radius: 10px;
 
   align-items: center;
   justify-content: center;
+  align-self: center;
 `;
 
 const ButtonText = styled(TextMain)`
   font-size: 16px;
+  line-height: 20px;
 `;

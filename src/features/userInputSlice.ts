@@ -25,7 +25,8 @@ export interface IUserInputState {
   contact: {value: string; isValid: boolean; errMsg: string};
   area: {value: string; isValid: boolean; errMsg: string};
   field: {value: string; isValid: boolean; errMsg: string};
-  intoduction: {value: string; isValid: boolean; errMsg: string};
+  career: {value: string; isValid: boolean; errMsg: string};
+  introduction: {value: string; isValid: boolean; errMsg: string};
 }
 
 const initialState: IUserInputState = {
@@ -50,7 +51,8 @@ const initialState: IUserInputState = {
   contact: {value: '', isValid: false, errMsg: ''},
   area: {value: '', isValid: false, errMsg: ''},
   field: {value: '', isValid: false, errMsg: ''},
-  intoduction: {value: '', isValid: false, errMsg: ''},
+  career: {value: '', isValid: false, errMsg: ''},
+  introduction: {value: '', isValid: false, errMsg: ''},
 };
 
 export const userInputSlice = createSlice({

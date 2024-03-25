@@ -6,8 +6,8 @@ import {
   HorizontalLine,
   Row,
   TextMain,
-} from '../../app/styles/styledComponents';
-import {colors} from '../../app/styles/colors';
+} from '../../shared/ui/styledComponents';
+import {colors} from '../../shared/colors';
 import {styled} from 'styled-components/native';
 import {ScrollView} from 'react-native';
 

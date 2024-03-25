@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import SmallButton from './SmallButton';
 import {useDispatch} from 'react-redux';
 import {IUserInputState, setValue} from '../../features/userInputSlice';
-import {colors} from '../../app/styles/colors';
+import {colors} from '../../shared/colors';
 
 const PRICE_BTNS = [
   {label: '1만원', price: 10000},
@@ -41,7 +41,7 @@ const PriceBtns = ({inputName, currentValue}: IPriceBtns) => {
             width: 72,
             height: 36,
             backgroundColor: colors.white,
-            borderColor: colors.lightGrey2,
+            borderColor: colors.lineLight,
             borderWidth: 1,
           }}
           key={index}
