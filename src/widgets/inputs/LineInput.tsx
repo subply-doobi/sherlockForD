@@ -1,7 +1,7 @@
 import {StyleProp, ViewStyle, TextInput} from 'react-native';
 import {styled} from 'styled-components/native';
-import {colors} from '../../app/styles/colors';
-import {TextMain} from '../../app/styles/styledComponents';
+import {colors} from '../../shared/colors';
+import {TextMain} from '../../shared/ui/styledComponents';
 import {ComponentProps, forwardRef} from 'react';
 
 interface ILineInput extends ComponentProps<typeof TextInput> {

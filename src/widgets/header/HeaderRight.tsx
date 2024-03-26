@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 import {icons} from '../../shared/iconSource';
 import {useNavigation} from '@react-navigation/native';
+import {Icon} from '../../shared/ui/styledComponents';
 
 const HeaderRight = () => {
   const {navigate} = useNavigation();
@@ -31,9 +32,4 @@ const IconBtn = styled.TouchableOpacity`
 
   justify-content: center;
   align-items: center;
-`;
-
-const Icon = styled.Image`
-  width: 24px;
-  height: 24px;
 `;

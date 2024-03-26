@@ -8,12 +8,12 @@ import {
   TextAppleLiGothic,
   TextJuliusSansOne,
   TextMain,
-} from '../../app/styles/styledComponents';
+} from '../../shared/ui/styledComponents';
 import styled from 'styled-components/native';
 import CTAButton from '../../widgets/buttons/CTAButton';
 import LineInput from '../../widgets/inputs/LineInput';
 import {useState} from 'react';
-import {colors} from '../../app/styles/colors';
+import {colors} from '../../shared/colors';
 
 const Login = () => {
   const [id, setId] = useState('');

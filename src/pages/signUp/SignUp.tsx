@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import {Col, Container} from '../../app/styles/styledComponents';
+import {Col, Container} from '../../shared/ui/styledComponents';
 import SquareInput from '../../widgets/inputs/SquareInput';
 import {useRef, useState} from 'react';
 import CTAButton from '../../widgets/buttons/CTAButton';

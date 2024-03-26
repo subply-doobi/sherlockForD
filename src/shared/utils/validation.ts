@@ -184,7 +184,18 @@ export const validateInput: IValidateInput = {
       errMsg: '',
     };
   },
-  intoduction: (v: string) => {
+  career: (v: string) => {
+    if (!v)
+      return {
+        isValid: false,
+        errMsg: '경력을 입력해주세요',
+      };
+    return {
+      isValid: true,
+      errMsg: '',
+    };
+  },
+  introduction: (v: string) => {
     if (!v)
       return {
         isValid: true,

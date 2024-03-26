@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
-import {TextMain} from '../../app/styles/styledComponents';
-import {colors} from '../../app/styles/colors';
+import {TextMain} from '../../shared/ui/styledComponents';
+import {colors} from '../../shared/colors';
 import React from 'react';
 
 interface IHeader {

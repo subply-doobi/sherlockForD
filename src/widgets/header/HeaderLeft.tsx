@@ -3,13 +3,14 @@ import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import styled from 'styled-components/native';
 import {icons} from '../../shared/iconSource';
+import {Icon} from '../../shared/ui/styledComponents';
 
 const HeaderLeft = () => {
   const {goBack} = useNavigation();
   return (
     <Box>
       <IconBtn onPress={() => goBack()}>
-        <Icon source={icons.chevron_down_24} />
+        <Icon source={icons.chevron_left_24} />
       </IconBtn>
     </Box>
   );
@@ -27,9 +28,4 @@ const IconBtn = styled.TouchableOpacity`
   align-items: center;
 
   margin-left: 16px;
-`;
-
-const Icon = styled.Image`
-  width: 24px;
-  height: 24px;
 `;

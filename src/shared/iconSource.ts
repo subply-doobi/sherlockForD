@@ -1,5 +1,16 @@
 export const icons = {
   home_24: require('./assets/icons/home-24.png'),
+  home_activate_24: require('./assets/icons/home-activate-24.png'),
   user_24: require('./assets/icons/user-24.png'),
-  chevron_down_24: require('./assets/icons/chevron-down-24.png'),
+  user_activate_24: require('./assets/icons/user-activate-24.png'),
+  chevron_left_24: require('./assets/icons/chevron-left-24.png'),
+  chevron_right_24: require('./assets/icons/chevron-right-24.png'),
+  certified_20: require('./assets/icons/certified-20.png'),
+  list_24: require('./assets/icons/list-24.png'),
+  docs_24: require('./assets/icons/docs-24.png'),
+  complete_24: require('./assets/icons/complete-24.png'),
+  clock_24: require('./assets/icons/clock-24.png'),
+  cancel_24: require('./assets/icons/cancel-24.png'),
+  check_20: require('./assets/icons/check-20.png'),
+  check_activate_20: require('./assets/icons/check-activate-20.png'),
 };

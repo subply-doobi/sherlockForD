@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../app/store/reduxStore';
-import {Container} from '../../app/styles/styledComponents';
+import {Container} from '../../shared/ui/styledComponents';
 import SquareInput from '../../widgets/inputs/SquareInput';
 import {setValue} from '../../features/userInputSlice';
 import {useRef, useState} from 'react';
