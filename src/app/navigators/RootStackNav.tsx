@@ -27,6 +27,16 @@ export const RootStackNav = () => {
         headerLeft: () => <HeaderLeft />,
       }}>
       <Stack.Screen
+        name="Login"
+        component={Login}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SignUp"
+        component={SignUp}
+        options={{headerTitle: '셜록 회원가입'}}
+      />
+      <Stack.Screen
         name="DetectiveDetail"
         component={DetectiveDetail}
         options={{headerShown: false}}
@@ -36,21 +46,11 @@ export const RootStackNav = () => {
         component={BottomTabNav}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="Login"
-        component={Login}
-        options={{headerShown: false}}
-      />
 
       <Stack.Screen
         name="ContractEdit"
         component={ContractEdit}
         options={{headerTitle: '계약서 작성'}}
-      />
-      <Stack.Screen
-        name="SignUp"
-        component={SignUp}
-        options={{headerTitle: '셜록 회원가입'}}
       />
       <Stack.Screen name="ContractList" component={ContractList} />
       <Stack.Screen name="ContractDetail" component={ContractDetail} />

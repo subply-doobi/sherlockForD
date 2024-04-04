@@ -1,0 +1,66 @@
+type DetectiveCertification @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  BusinessRegistration: AWSURL
+  DetectiveCertification: AWSURL
+  LocalGovernmentCertification: AWSURL
+  TaxCertification: AWSURL
+}
+
+type DetectiveProfile @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  CompanyName: String
+  RepresentativeName: String
+  CompanyAddress: String
+  Contact: String
+  Field: String
+  Area: String
+  DetailCareer: String
+  Intro: String
+  DetectiveCertificationInDetectiveProfile: DetectiveCertification @hasOne
+}
+
+type Contract @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Date: AWSDate
+  Client: String
+  Field: String
+  Purpose: String
+  Option: String
+  Advance: String
+  Fee: String
+  Refund: String
+  Total: String
+  DetectiveSign: String
+  ClientSign: String
+}
+
+type ProgressReport @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Date: AWSDate
+  Content: String
+}
+
+type SupportingData @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Content: String
+}
+
+type Application @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Date: AWSDate
+  Client: String
+  Field: String
+  Purpose: String
+}
+
+type ContractDetail @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  status: String
+  ContractID: ID
+  Contract: Contract @hasOne (fields: ["ContractID"])
+  ApplicationID: ID
+  Application: Application @hasOne (fields: ["ApplicationID"])
+  ProgressReportID: ID
+  ProgressReport: ProgressReport @hasOne (fields: ["ProgressReportID"])
+}
+ 

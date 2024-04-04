@@ -12,11 +12,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2EC80B006F084C71BBD199AE /* NotoSansKR-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 714E76269A4141E3A6561C3D /* NotoSansKR-VariableFont_wght.ttf */; };
+		3DBF9652D0C6480192A06EF5 /* JuliusSansOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23CD2091A39C460FB53C5298 /* JuliusSansOne-Regular.ttf */; };
+		6289B98A13B74E8E8C988932 /* AppleLiGothicMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C7D5C984548F98D614494 /* AppleLiGothicMedium.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-sherlockForD-sherlockForDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-sherlockForD-sherlockForDTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		6289B98A13B74E8E8C988932 /* AppleLiGothicMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C7D5C984548F98D614494 /* AppleLiGothicMedium.ttf */; };
-		3DBF9652D0C6480192A06EF5 /* JuliusSansOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23CD2091A39C460FB53C5298 /* JuliusSansOne-Regular.ttf */; };
-		2EC80B006F084C71BBD199AE /* NotoSansKR-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 714E76269A4141E3A6561C3D /* NotoSansKR-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,16 +40,16 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = sherlockForD/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = sherlockForD/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-sherlockForD-sherlockForDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sherlockForD-sherlockForDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CD2091A39C460FB53C5298 /* JuliusSansOne-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "JuliusSansOne-Regular.ttf"; path = "../src/assets/fonts/JuliusSansOne-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-sherlockForD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sherlockForD.debug.xcconfig"; path = "Target Support Files/Pods-sherlockForD/Pods-sherlockForD.debug.xcconfig"; sourceTree = "<group>"; };
+		4F4C7D5C984548F98D614494 /* AppleLiGothicMedium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AppleLiGothicMedium.ttf; path = ../src/assets/fonts/AppleLiGothicMedium.ttf; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-sherlockForD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sherlockForD.release.xcconfig"; path = "Target Support Files/Pods-sherlockForD/Pods-sherlockForD.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-sherlockForD-sherlockForDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sherlockForD-sherlockForDTests.debug.xcconfig"; path = "Target Support Files/Pods-sherlockForD-sherlockForDTests/Pods-sherlockForD-sherlockForDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-sherlockForD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sherlockForD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		714E76269A4141E3A6561C3D /* NotoSansKR-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansKR-VariableFont_wght.ttf"; path = "../src/assets/fonts/NotoSansKR-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = sherlockForD/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-sherlockForD-sherlockForDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sherlockForD-sherlockForDTests.release.xcconfig"; path = "Target Support Files/Pods-sherlockForD-sherlockForDTests/Pods-sherlockForD-sherlockForDTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		4F4C7D5C984548F98D614494 /* AppleLiGothicMedium.ttf */ = {isa = PBXFileReference; name = "AppleLiGothicMedium.ttf"; path = "../src/assets/fonts/AppleLiGothicMedium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		23CD2091A39C460FB53C5298 /* JuliusSansOne-Regular.ttf */ = {isa = PBXFileReference; name = "JuliusSansOne-Regular.ttf"; path = "../src/assets/fonts/JuliusSansOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		714E76269A4141E3A6561C3D /* NotoSansKR-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "NotoSansKR-VariableFont_wght.ttf"; path = "../src/assets/fonts/NotoSansKR-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +144,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		92F5E4D4F945421E9E768F29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F4C7D5C984548F98D614494 /* AppleLiGothicMedium.ttf */,
+				23CD2091A39C460FB53C5298 /* JuliusSansOne-Regular.ttf */,
+				714E76269A4141E3A6561C3D /* NotoSansKR-VariableFont_wght.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,17 +165,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		92F5E4D4F945421E9E768F29 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				4F4C7D5C984548F98D614494 /* AppleLiGothicMedium.ttf */,
-				23CD2091A39C460FB53C5298 /* JuliusSansOne-Regular.ttf */,
-				714E76269A4141E3A6561C3D /* NotoSansKR-VariableFont_wght.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -565,7 +565,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -593,6 +593,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -600,7 +601,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -637,7 +644,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -657,6 +664,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -664,7 +672,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

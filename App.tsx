@@ -11,6 +11,11 @@ import {RootStackNav} from './src/app/navigators/RootStackNav';
 import {store} from './src/app/store/reduxStore';
 import {Provider} from 'react-redux';
 
+//aws amplify configure
+import {Amplify} from 'aws-amplify';
+import awsExports from './src/aws-exports';
+Amplify.configure(awsExports);
+
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
