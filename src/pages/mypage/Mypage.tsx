@@ -1,3 +1,4 @@
+import React, {useEffect, useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {View, Text, ScrollView} from 'react-native';
 import styled from 'styled-components/native';
@@ -18,6 +19,24 @@ import SmallButton from '../../widgets/buttons/SmallButton';
 
 const Mypage = () => {
   const {navigate} = useNavigation();
+  const [formState, setFormState] = useState(initialState);
+  const [todos, setTodos] = useState([]);
+  useEffect(() => {
+    fetchTodos();
+  }, []);
+  async function fetchTodos() {
+    try {
+      const todoData = await client.graphql({
+        query: getTodo,
+        variables: {id: '123'},
+        authMode: 'apiKey',
+      });
+      console.log('todoData:', todoData);
+    } catch (err) {
+      console.log('error fetching todos', err);
+    }
+  }
+
   return (
     <Container>
       <ScrollView contentContainerStyle={{paddingBottom: 64}}>
